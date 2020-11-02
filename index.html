@@ -47,24 +47,27 @@
             </header>
 
             <main role="main" class="inner cover" style="background-color:rgba(102,0,128, 0.5);">
-                <h1 style="text-shadow: 2px 2px #333; font-size: 2.5rem;" class="cover-heading"><br/><br/>Safe for the Holidays fundraiser</h1>
-                  <div class="row countdown">
-                    <div id="countdown1" class="col-lg-6 col-sm-6 text-right" style="padding-right: 0px;">
+                <h1 style="text-shadow: 2px 2px #333; font-size: 2.6rem;" class="cover-heading"><br/>Safe for the Holidays fundraiser</h1>
+                <h4 style="text-shadow: 1px 1px #333;"><br/>Multiple prize packages; 1 goal:<br/>Creating a society of survivors, one escape at a time.<br/><br/></h4>
+                <h1 style="text-shadow: 2px 2px #333; font-size: 2.5rem;" class="cover-heading">THE COUNTDOWN BEGINS...</h1>
+                 <div class="row countdown" style="margin-bottom: 15px;">
+                    <div class="col-lg-1 col-sm-1"></div>
+                    <div id="countdown1" class="col-lg-5 col-sm-5 text-right" style="padding-right: 0px;">
                     </div>
-                    <div id="countdown2" class="col-lg-6 col-sm-6 text-left" style="padding-left: 10px;">
+                    <div id="countdown2" class="col-lg-5 col-sm-5 text-left" style="padding-left: 10px;">
                     </div>
                   </div>
-                  <span style="font-size: 20px; font-weight: bold;">days to reveal prize package #1</span>
-                <h4 style="text-shadow: 1px 1px #333;"><br/>4 incredible prize packages; 1 goal:<br/>Creating a society of survivors, one escape at a time.<br/><br/></h4>
-                <p class="lead">
-                    <div style="text-shadow: none; font-size: 1.2em;" class="alert alert-dark" role="alert">
+                  <h1 style="text-shadow: 2px 2px #333; font-size: 2.5rem;" class="cover-heading">days left to reveal the packages<br/><br/></h1>
+                  <a style="text-shadow: 1px 1px #333; font-size: 2.0rem;"><span id="flash-arrow1" style="color: yellow;">&rarr;</span>&nbsp;&nbsp; <span style="text-decoration: underline;;">Please visit our amazing sponsors</span> &nbsp;&nbsp;<span id="flash-arrow2" style="color: yellow;">&larr;</span></a>
+              <p class="lead"><br/><br/>
+                    <div style="text-shadow: none; font-size: 1.6em;" class="alert alert-dark" role="alert">
                     100% OF MONIES RAISED GO <br/>
                     DIRECTLY TO HELP VICTIMS ESCAPE <br/>
                     DOMESTIC VIOLENCE ENVIRONMENTS
                     </div>
                 </p>
                 <h4 style="text-shadow: 1px 1px #333; color: #FDCF08;"><br/>Your generous support literally saves lives - thank you!!<br/><br/></h4>
-            </main>
+              </main>
 
             <footer class="mastfoot mt-auto">
                 <div class="inner">
@@ -82,6 +85,18 @@
           var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
           document.getElementById("countdown2").innerHTML = parseInt(Difference_In_Days%10);
           document.getElementById("countdown1").innerHTML = parseInt(Difference_In_Days/10);
+
+          window.setInterval(() => {
+            var arr1 = document.getElementById("flash-arrow1");
+            var arr2 = document.getElementById("flash-arrow2");
+            if (arr1.style.visibility != "hidden") {
+              arr1.style.visibility = "hidden";
+              arr2.style.visibility = "hidden";
+            } else {
+              arr1.style.visibility = "visible";
+              arr2.style.visibility = "visible";
+            }
+          }, 1000);
         </script>
     </body>
 </html>
