@@ -32,6 +32,11 @@ body {
   background-size: 200px;
 }
 
+
+nav.nav-masthead {
+  background-color:rgba(102,0,128, 0.5);
+}
+
 body {
   display: -ms-flexbox;
   display: flex;
@@ -114,9 +119,36 @@ body {
   font-weight: bold;
 }
 
+.thank-you {
+  text-shadow: 1px 1px #333;
+  color: #FDCF08;
+  background-color:rgba(102,0,128, 0.5);
+  background-size: 200px;
+}
+
+.sponsors .alert {
+  text-shadow: none; line-height: 1.4em;
+}
+.sponsors a.title {
+  color: rgba(102,0,128, 1);
+  font-weight: bold; font-size: 1.2em;
+  text-overflow: ellipsis; white-space: nowrap; overflow: hidden;
+  width: calc(100%); display: inline-block;
+}
+.sponsors a.website {
+  color: rgba(102,0,128, 1);
+  font-size: 0.9em;
+  text-overflow: ellipsis; white-space: nowrap; overflow: hidden;
+  width: calc(100%); display: inline-block;
+}
+
+
 /*
  * Footer
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+  font-size: 1.5rem;
+  background-color:rgba(102,0,128, 0.5);
+  background-size: 200px;
 }
