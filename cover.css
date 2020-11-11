@@ -143,6 +143,14 @@ body {
 }
 
 
+.disabled-prize {
+  opacity: 0.6;
+  font-size: 1.5rem;
+}
+.disabled-prize a {
+  cursor: not-allowed;
+}
+
 /*
  * Footer
  */
