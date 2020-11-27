@@ -36,6 +36,7 @@
     </style>
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
+    <link href="image_viewer.css" rel="stylesheet">
   </head>
   <body class="text-center">
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -55,6 +56,26 @@
             <main role="main" class="inner cover" style="background-color:rgba(102,0,128, 0.5);">
               <h1 style="text-shadow: 2px 2px #333; font-size: 3rem; font-family: 'Playball', cursive;" class="cover-heading"><br/>Safe for the Holidays fundraiser</h1>
               <h2 style="text-shadow: 1px 1px #333;"><br/>PRIZE PACKAGE #3<br/>CAR &amp; HOME<br/>PACKAGE</h2>
+
+
+
+               <!-- Trigger the Modal -->
+               <span style="text-decoration: underline; font-size: 1.2em;"><img id="myImg" src="3" alt="click here to view pictures of prizes"></span>
+
+               <!-- The Modal -->
+               <div id="myModal" class="modal">
+ 
+                 <!-- The Close Button -->
+                 <span class="close">&times;</span>
+ 
+                 <!-- Modal Content (The Image) -->
+                 <img class="modal-content" id="img01">
+ 
+                 <!-- Modal Caption (Image Text) -->
+                 <div id="caption"></div>
+               </div>
+
+
               <h4 class="thank-you" style="text-shadow: 1px 1px #333;"><br/>** $400 VALUE **<br/></h4>
               <h2 style="text-shadow: 1px 1px #333;"><br/>ROBOT VACUUM, Goovi 2100Pa<br/>SPECTRUM CAR CARE gift card<br/>PORTABLE CAR VACUUM<br/>BAMBOO SERVE SET</h2>
               <h1 style="text-shadow: 2px 2px #333; font-size: 2.5rem;" class="cover-heading">
@@ -98,6 +119,7 @@ Cash or check? Call Jackie 480-573-1117
             </footer>
         </div>
 
+        <script src="image_viewer.js"></script>
         <script>
 
           window.setInterval(() => {
